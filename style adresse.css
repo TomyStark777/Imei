@@ -1,0 +1,142 @@
+#Bloc1{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content:start;
+}
+#bloc2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 52vw;
+}
+label{
+    height: 200PX 900PX;
+    width: 200PX;
+    color: black;
+    border-color: blue;
+}
+button{
+    background-color: blue;
+    border: 3px;
+    height: 27px ;
+    width: 200px;
+    transition-duration: 0,5s;
+    border-radius: 5px;
+
+}
+input{
+    border-color: blue;
+    height: 45px;
+    width: 30vw;
+    padding-left: 10px;
+    border-radius: 5Px;
+
+}
+body {
+    background-color: rgba(185, 189, 216, 0.407);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    width: 32vw;
+    height: 7vh;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 600;
+}
+button:hover{
+    box-shadow: 0 5px 20px #9fb3b9;
+}
+p.terms {
+    font-size: 0.8em;
+}
+.connexion{
+    margin-left: 40px;
+}
+.feature-list {
+    max-width: 500px;
+    margin: AUto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    align-items: center;
+    height: 100vh;
+}
+
+.feature-list h2 {
+    color: #333;
+}
+
+.feature-list ul {
+    list-style-type: none;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    padding-left: 30px; 
+    position:relative; 
+}
+
+.feature-list li:before { 
+   content:'\2713'; 
+   position:absolute; 
+   left:0; top:-2px; 
+   color:green; 
+}
+body {
+    font-size: 18px;
+    color: #333; 
+    line-height: 1.5; 
+  }
+  
+  .feature-list {
+    width: 100vw;
+  }
+  .feature-list img{
+    margin-left: 25%;
+    width: 20vw;
+  }
+  .feature-list li {
+    font-weight: bold; 
+  }
+  
+  .social-buttons:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .form-field, .submit-button {
+    height: 50px; 
+  }
+  button {
+    transition-duration: 0.4s;
+  }
+#texte{
+    color: #007BFF;
+    
+}
+ul{
+    font-size: 16px;
+}
+.groupe{
+    display: flex;
+    
+}
+  
+  
+  
+  
+  
+  

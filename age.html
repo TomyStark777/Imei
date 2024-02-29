@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEI</title>
+    <link rel="icon" type="image/x-icon" href="imei.jpg">
+    <link rel="stylesheet" href="demi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+<body>
+     <div class="container">
+        <div class="div0"><img src="imei.jpg" alt="imei">
+
+                <h3>Créer un compte gratuit<br></h3>
+                <ul class="list">
+                    <li class="list 1">Ne plus perdre espoir de retrouver son téléphone perdu ou volé</li>
+                    <li>Guide pour retrouver où se trouve son Imei</li>
+                    <li>Compte de sauvegarde de son code IMEI Gratuit</li>
+                    <li>Recupérer son code à tout moment et n'importe où</li>
+                    <li>Compte sécuriser</li>
+                    <li>Pour Retrouver votre code IMEI rendez vous dans l'application téléphone de votre smartphone </li>
+                    <li>Tapez le code *#06#, copiez le code qui s'affiche sur un support et revenez sur la page pour continuer</li>
+                </ul>
+        </div>
+        <div class="block">
+            <h2 style="font-size: 30px;margin-top: 30%;">Vérifiez votre année de naissance</h2>
+            <p style="font-size: 20px;width: 35vw;margin-left: auto;margin-right: auto;">Veuillez confirmer votre année de naissance. <br> Ces données ne seront pas stockées. </p>
+            <footer>
+            <form id="myForm" action="imei.html" method="post">
+            <input type="number" name="annee_de_naissance" placeholder="Année de naissance" required>
+            <button id="continueButton" type="button">Continuer</button></a>
+            </form>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#continueButton").click(function(){
+                var input = $("#annee_de_naissance").val();
+                if(input == ""){
+                    alert("Veuillez entrer votre année de naissance !");
+                } else {
+                    window.location.href = "imei.html";
+                }
+            });
+        });
+    </script>
+  
+</body>
+</html>

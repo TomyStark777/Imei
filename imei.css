@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+nav{
+    position: relative;
+    height: 10vh;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+.imei{
+    font-family: 'Protest Revolution', sans-serif;
+    color: rgb(0, 89, 255);
+    font-size: 60px;
+    position: absolute;
+    left: 10px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+nav ul div {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 2vw;
+}
+.second{
+    width: 40vw;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    border-radius: 20px;
+    border-top: 2px solid rgba(45, 222, 142, 0.897);
+    border-bottom: 2px solid rgb(5, 245, 209);
+    padding: 10px;
+    box-shadow: 0 0 50px rgba(207, 200, 200, 0.715) ;
+    position: relative;
+    bottom: 50%;
+    background-color: white;
+}
+.second label{
+    font-size: 20px;
+}
+.input{
+    width: 30vw;
+    height: 8vh;
+    margin: 2%;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+}
+.submit{
+    width: 31vw;
+    height: 8vh;
+    background-color:rgb(0, 89, 255) ;
+    border: 1px solid lightgrey;
+    border-radius: 22px;
+    color: antiquewhite;
+    font-size:18px;
+    font-weight: 600;
+    margin: 4%;
+}
+
+.comment{
+    font-size: 15px;
+}
+input[type="checkbox"]{
+    width: 3em;
+    height: 1.5em;
+    appearance: none;
+    box-shadow: 0 0 15px lightgrey;
+    border-radius: 1rem;
+    position: relative;
+
+}
+input[type="checkbox"]::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 17px;
+    height:17px;
+    background-color: rgba(47, 50, 61, 0.897);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition: left .3s;
+}
+input[type="checkbox"]:checked{
+    background-image:linear-gradient(to right , rgb(0, 255, 221),rgb(0, 85, 255));
+}
+input[type="checkbox"]:checked::after{
+    left:75%
+}
+.check{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.check span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+body{
+    background-color: rgba(185, 189, 216, 0.407);
+
+}

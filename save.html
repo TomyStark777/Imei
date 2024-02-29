@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
+    <title>IMEI</title>
+    <!-- lien vers le code css -->
+    <link rel="stylesheet" href="style adresse.css">
+    <link rel="icon" type="image/x-icon" href="Image imei.png">
+    <script>
+        window.onload = function() {
+            document.getElementById("continueButton").addEventListener("click", function(event){
+                var input = document.getElementById("text").value;
+                if(input == ""){
+                    event.preventDefault();
+                    alert("Veuillez entrer L'imei!");
+                } else {
+                    window.location.href = "principal.html";
+                }
+            });
+        }
+    </script>
+</head> 
+<!-- Corps de la page -->
+<body>
+    <!-- haut de la page -->
+    <div class="groupe">
+        <div class="feature-list">
+            <img src="Image imei.png" alt="" style="border-radius: 50%;">
+            <h2 style="text-align: center;">Comment connaitre mon IMEI</h2>
+            <ul>
+                <li>Pour Retrouver votre code IMEI rendez vous dans l'application téléphone de votre smartphone </li>
+                <li>Tapez le code *#06# et revenez sur la page pour continuer</li>
+            </ul>
+        </div>
+        <div id="bloc2"> 
+            <h1><STRong>Passons à l'étape de sauvegarde</STRong></h1>
+            <form id="my form" action="Principal.html" method="post">
+                <input type="text" id="text" placeholder="Entrez votre IMEI" required><br> <br>
+                <button id="continueButton" type="button" style="text-decoration:none;color: aliceblue;">Continuer</button>
+            </form>
+        </div>
+    </div>    
+    <script>
+        // Supposons que vous ayez des champs de formulaire avec les identifiants 'userIMEI' et 'userCode'
+        var text = document.getElementById('text').value;
+        
+        // Stockez ces valeurs dans le stockage local
+        localStorage.setItem('text', text);
+        </script>
+   
+</body>
+</html>

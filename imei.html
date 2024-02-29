@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="Image imei.png">
+<link rel="stylesheet" href="imei.css">
+<script>
+    window.onload = function() {
+        document.getElementById("continueButton").addEventListener("click", function(event){
+            var input = document.getElementById("name").value;
+            var input= document.getElementById("firstname").value
+            var input= document.getElementById("password").value
+            if(input == ""){
+                event.preventDefault();
+                alert("Veuillez entrer Les informations!");
+            } else {
+                window.location.href = "save.html";
+            }
+        });
+    }
+</script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <span class="imei">IMEI</span>
+            <div>
+                <li>Vous avez déjà un compte ? <a href="premier1.html">Connectez vous</a></li>
+                <li><a href="mailto:assounrodrigue5@gmail.com">Contactez-nous</a></li>
+            </div>    
+        </ul>
+    </nav>
+    <div class="ensemble">
+        <div class="second">
+            <p style="font-size: 30px;margin: 4%;">Créez Votre Compte</p>
+            <p class="comment">Entrez votre vrai nom et votre vrai prénom également</p>
+            <form id="myform" action="save.html" method="post">
+            <input type="name" id="name" placeholder="Prénom"  class="input" required>
+            <input type="name" id="firstname" placeholder="Nom de famille" class="input" required>
+            <input type="password" id="password" name="code" placeholder="Mot de passe" class="input" required><br>
+            </form>
+            <div style="display: flex;align-items: center;text-align: center;justify-content: center;">
+                <input type="checkbox" name="souvenir" class="check"><p style="margin-left: 3%;">Se souvenir de moi</p>
+            </div>
+            <button id="continueButton" type="submit" class="submit">Continuer</button>
+        </div>
+
+    </div>
+    <script>
+        // Supposons que vous ayez des champs de formulaire avec les identifiants 'userIMEI' et 'userCode'
+        var name = document.getElementById('Nom de famille').value;
+        var firstname = document.getElementById('Prénom').value;
+        
+        // Stockez ces valeurs dans le stockage local
+        localStorage.setItem('name', name);
+        localStorage.setItem('firstname', firstname);
+    </script>
+        
+</body>
+</html>

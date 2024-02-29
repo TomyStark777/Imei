@@ -1,0 +1,62 @@
+.user-info {
+    color: white;
+    padding: 20px;
+    margin: 10px;
+  }
+  .deux{
+    justify-content: center;
+  }
+  .parcours {
+    background-color: rgb(13, 181, 253);
+    color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 5px 10px 30px rgb(86, 106, 168);
+  }
+  
+  .messages {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .procedure {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: white;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+img{
+  width: 25vw;
+  height: 45vh;
+
+}
+.tout{
+  background-image: linear-gradient(to bottom right,rgb(0, 217, 255),rgb(0, 140, 255) 70% 30%);
+  border: 1px solid darkgrey;
+  width: 70%;
+  height: 70vh;
+  padding-top:20px ;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  box-shadow: 10px 15px 30px lightslategray;
+}

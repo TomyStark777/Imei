@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
+    <title>IMEI</title>
+    <!-- lien vers le code css -->
+    <link rel="stylesheet" href="style adresse.css">
+    <link rel="icon" type="image/x-icon" href="Image imei.png">
+    <script>
+        window.onload = function() {
+            document.getElementById("continueButton").addEventListener("click", function(event){
+                var input = document.getElementById("email").value;
+                if(input == ""){
+                    event.preventDefault();
+                    alert("Veuillez entrer une donnée!");
+                } else {
+                    window.location.href = "age.html";
+                }
+            });
+        }
+    </script>
+   
+   
+</head> 
+<!-- Corps de la page -->
+<body>
+    <!-- haut de la page -->
+    <div class="groupe">
+        <div class="feature-list">
+            <img src="Image imei.png" alt="" style="border-radius: 50%;">
+            <h2>Veuillez lire ceci  pour commencer</h2>
+            <ul>
+                <li>Créer un compte gratuit</li>
+                <li>Ne plus perdre espoir de retrouver son téléphone perdu ou volé</li>
+                <li>Guide pour retrouver où se trouve son Imei</li>
+                <li>Compte de sauvegarde de son code IMEI Gratuit</li>
+                <li>Recupérer son code à tout moment et n'importe où</li>
+                <li>Compte sécuriser</li>
+                <li>Pour Retrouver votre code IMEI rendez vous dans l'application téléphone de votre smartphone </li>
+                <li>Tapez le code *#06#, copiez le code qui s'affiche sur un support et revenez sur la page pour continuer</li>
+            </ul>
+        </div>
+        <div id="bloc2"> 
+            <h1><STRong>Commençons</STRong></h1>
+            <footer>
+            <form id="myForm" action="age.html" method="post">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Adresse éléctronique" required><br> <br>
+                <button id="continueButton" type="button" style="text-decoration:none;color: aliceblue;">Continuer</button>
+            </form>
+
+            <p>En continuant, vous acceptez nos <a href="Politique de confidentialité.html">conditions d'utilisation</a></p>
+            </footer>
+        </div>
+    </div>    
+    <script>
+        // Supposons que vous ayez des champs de formulaire avec les identifiants 'userIMEI' et 'userCode'
+        var email = document.getElementById('email').value;
+        // Stockez ces valeurs dans le stockage local
+        localStorage.setItem('email', email);
+        </script>
+        <script src="addresse.js"></script>
+</body>
+</html>ll

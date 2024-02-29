@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentation</title>
+    <link rel="icon" type="image/x-icon" href="Image imei.png">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="premier1.css">
+    <link rel="stylesheet" href="premier1.php">
+    <script>
+        window.onload = function() {
+            document.getElementById("continueButton").addEventListener("click", function(event){
+                var input = document.getElementById("email").value;
+                var input = document.getElementById("motpass").value;
+                if(input == ""){
+                    event.preventDefault();
+                    alert("Veuillez entrer vos données!");
+                } else {
+                    window.location.href = "principal.html";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <span class="imei">IMEI</span>
+            <div>
+                <li>Vous n'avez pas de compte ? <a href="addresse.html">Inscrivez-vous</a></li>
+                <li><a href="mailto:assounrodrigue5@gmail.com">Contactez-nous</a></li>
+            </div>    
+        </ul>
+    </nav> 
+        <div>
+            
+            <div class="form">
+                <h1 style="margin: 20px;">Connectez-vous</h1>
+                <form id="my form" action="Principal.html" method="post">
+                    <input type="email" name="@gmail" id="email" placeholder="Email">
+                    <input type="password" name="password" id="motpass" placeholder="Mot de passe">
+                    <div style="font-size: 20px;" id="lien">
+                        <a href="page6.html">Mot de passe oublié ?</a><br>
+                        <a href="page7.html">Aide !</a>
+                    </div>
+                </form>    
+                <button id="continueButton" type="button">Connexion</button></a>
+                <div style="font-size: 15px;margin: 3%;width: 80%;margin-left: auto;margin-right:auto ;">
+                    <p>En cas de non comprehension veuillez lire les <a href="Politique de confidentialité.html">politiques de confidencialité</a>,ainsi votre connexion approuve l'acception des divers  politiques d'usage du site.</p>
+                </div>
+            </div>
+</body>
+</html>
+
+

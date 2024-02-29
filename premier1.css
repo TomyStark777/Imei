@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+#title h1{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#tete ul {
+   display: flex;
+   align-items:center ;
+   text-decoration: none;
+   gap: 20px;
+}
+body{
+    background-color: rgba(185, 189, 216, 0.407);
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height: 99vh;
+}
+#title ul li {
+    text-decoration: none;
+    display: flex;
+}
+button{
+    width: 32vw;
+    height: 9vh;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(17, 114, 242);
+}
+input {
+    height: 8vh;
+    border-left:2px solid rgb(0, 11, 171) ;
+    border-top:2px solid rgb(0, 11, 171) ;
+    border-right:2px solid rgb(0, 68, 255) ;
+    border-bottom: 2px solid blue;
+    border-radius: 5px;
+    width: 30vw;
+    padding-left: 20px;
+    font-size: 20px;
+    margin: 2%;
+}
+a{
+    text-decoration: none;
+}
+#lien{
+    gap: 15%;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+#title{
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 0% 4% 0%;
+    height: 10vh;
+    align-items: center;
+    position: relative;
+}
+section img {
+    max-width: 30%;
+    max-height: 40px;
+    gap: 30px;
+}
+div picture {
+    justify-content: safe;
+    margin-right: 500px;
+    margin-left: 500px;
+    display: flex;
+    gap: 10px;
+}
+.form{
+    width: 40%;
+    height: 70vh;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px darkgrey;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+#title ul {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+}
+nav{
+    position: relative;
+    height: 10vh;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+.imei{
+    font-family: 'Protest Revolution', sans-serif;
+    color: rgb(0, 89, 255);
+    font-size: 60px;
+    position: absolute;
+    left: 10px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+nav ul div {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 2vw;
+}
+
