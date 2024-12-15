@@ -27,13 +27,7 @@ Pour installer et exécuter ce projet en local, suivez ces étapes :
     - Créez une base de données MySQL.
     - Importez le fichier `database.sql` dans votre base de données.
 
-5. Mettez à jour les informations de connexion à la base de données dans le fichier `config.php` :
-    <?php
-    define('DB_HOST', 'localhost');
-    define('DB_USER', 'votre_utilisateur');
-    define('DB_PASS', 'votre_mot_de_passe');
-    define('DB_NAME', 'votre_base_de_donnees');
-    ?>
+5. Mettez à jour les informations de connexion à la base de données
 
 6. Lancez votre serveur web local (par exemple XAMPP, WAMP) et ouvrez le navigateur à l'adresse suivante :
    
