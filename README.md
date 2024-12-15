@@ -46,6 +46,7 @@ Pour installer et exécuter ce projet en local, suivez ces étapes :
     - Accédez à la page d'enregistrement des IMEI et saisissez les informations nécessaires.
     
 ##Fonctionnalités à venir
+
 2. Consultez les IMEI enregistrés :
 3. Supprimez un IMEI :
     
